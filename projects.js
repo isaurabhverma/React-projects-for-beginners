@@ -536,7 +536,7 @@ const projects = [
   {
     "title": "Memory-Card-Game",
     "url": "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Memory-Card-Game",
-    "description": "Test your memory by flipping cards to find matching pairs. A classic game built with **HTML**, **CSS**, and **JavaScript** to sharpen your focus and have fun!",
+    "description": "Test your memory by flipping cards to find matching pairs. A classic game built with React to sharpen your focus and have fun!",
     "imgSrc": "assets/memory.png"
   },
 
