@@ -40,12 +40,6 @@ export default function Game() {
           />
         </div>
 
-        {isPaused && (
-          <div className="bg-yellow-500 text-white text-center py-3 px-6 rounded-lg mb-6 max-w-md mx-auto font-semibold">
-            Game Paused
-          </div>
-        )}
-
         {isLoading ? (
           <div className="text-white text-center text-xl">Loading game...</div>
         ) : (
@@ -81,6 +75,25 @@ export default function Game() {
           </div>
         </div>
       )}
+
+      {isPaused && !isGameComplete && (
+        <div className="fixed inset-0 flex items-center justify-center z-40">
+          {/* Blur the background behind the modal */}
+          <div className="absolute inset-0 backdrop-blur-sm bg-white/10"></div>
+
+          <div className="relative bg-green-400 text-white rounded-lg p-6 max-w-sm text-center shadow-lg z-50">
+            <h2 className="text-2xl font-bold mb-2">Game Paused</h2>
+            <p className="mb-4">Take a break or resume whenever you’re ready!</p>
+            <button
+              onClick={togglePause}
+              className="bg-yellow-300 hover:bg-yellow-400 text-white font-semibold py-2 px-4 rounded"
+            >
+              Resume
+            </button>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }
