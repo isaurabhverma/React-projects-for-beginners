@@ -1,4 +1,4 @@
-import { Trophy, Clock, Star } from 'lucide-react';
+import { Puzzle, Clock, Star } from 'lucide-react';
 import type { GameStats } from '../types/game';
 
 interface ScoreBoardProps {
@@ -31,7 +31,7 @@ export default function ScoreBoard({ stats }: ScoreBoardProps) {
       </div>
 
       <div className="flex items-center gap-3 bg-white px-6 py-4 rounded-lg shadow-md">
-        <Trophy className="text-green-500" size={24} />
+        <Puzzle className="text-blue-500" size={24} />
         <div>
           <div className="text-sm text-gray-600">Matches</div>
           <div className="text-2xl font-bold text-gray-800">{stats.matches} / 10</div>
