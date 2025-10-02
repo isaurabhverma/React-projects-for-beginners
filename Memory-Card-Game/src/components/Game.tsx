@@ -22,7 +22,7 @@ export default function Game() {
   const highScores = getHighScores();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-8 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold text-white text-center mb-8">
           Memory Card Game
@@ -39,15 +39,6 @@ export default function Game() {
             disabled={isLoading}
           />
         </div>
-
-        {isGameComplete && (
-          <div className="bg-green-500 text-white text-center py-4 px-6 rounded-lg mb-6 max-w-md mx-auto">
-            <h2 className="text-2xl font-bold mb-2">Congratulations!</h2>
-            <p className="text-lg">
-              You completed the game in {stats.time} seconds with a score of {stats.score}!
-            </p>
-          </div>
-        )}
 
         {isPaused && (
           <div className="bg-yellow-500 text-white text-center py-3 px-6 rounded-lg mb-6 max-w-md mx-auto font-semibold">
@@ -72,6 +63,24 @@ export default function Game() {
 
         <HighScores highScores={highScores} />
       </div>
+
+      {/* Modal for game completion */}
+      {isGameComplete && (
+        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-8 max-w-md text-center shadow-lg">
+            <h2 className="text-3xl font-bold mb-4 text-green-600">Congratulations!</h2>
+            <p className="text-lg mb-6">
+              You completed the game in {stats.time} seconds with a score of {stats.score}!
+            </p>
+            <button
+              onClick={newGame}
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"
+            >
+              Play Again
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
