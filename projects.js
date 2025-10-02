@@ -539,6 +539,13 @@ const projects = [
     "description": "Test your memory by flipping cards to find matching pairs. A classic game built with React to sharpen your focus and have fun!",
     "imgSrc": "assets/memory.png"
   },
+  {
+    title: "Mood Journal App 🌈",
+    url: "https://github.com/Anas2604-web/React-projects-for-beginners/tree/add-mood-journal-app/Mood-Journal",
+    description: "A simple and responsive React app to select your mood and enjoy animated messages built with **React**, **Vite**, and **GSAP**.",
+    imgSrc: "assets/Mood-Journal.png"
+  }
+
 
 ];
 
