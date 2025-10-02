@@ -409,14 +409,14 @@ const projects = [
     description: "A secure React-based password manager built with the MERN stack for storing and managing credentials.",
     imgSrc: "assets/Manager.png"
   },
-    {
+  {
     title: "React Docs Blog",
     url: "https://github.com/YOUR-USERNAME/React-projects-for-beginners/tree/dev/react-docs-blog",
     description: "A React-based blog app documenting React concepts and interview questions, built with a clean and structured layout for learning and reference.",
     imgSrc: "assets/react-docs-blog.png"
   },
 
-  
+
   {
     title: "iNoteBook - A Platform for Notes",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/inotebook",
@@ -496,44 +496,50 @@ const projects = [
     imgSrc: "assets/wallet.png"
   },
   {
-    title:"Patreon clone",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main/patreon",
-    description:"A Patreon clone is a platform that enables creators to earn recurring income by offering exclusive content and rewards to supporters",
-    imgSrc:"assets/patreon.png"
+    title: "Patreon clone",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/patreon",
+    description: "A Patreon clone is a platform that enables creators to earn recurring income by offering exclusive content and rewards to supporters",
+    imgSrc: "assets/patreon.png"
   },
   {
-    title:"Flash light toggle",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Flashlight-Toggle-App",
-    description:"This app changes the background color to simulate a flashlight turning on and off.",
-    imgSrc:"assets/flashlight.png"
+    title: "Flash light toggle",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Flashlight-Toggle-App",
+    description: "This app changes the background color to simulate a flashlight turning on and off.",
+    imgSrc: "assets/flashlight.png"
   },
   {
-    title:"Reaction-time tester",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Reaction-Time-Tester",
-    description:"A React app that tests your reaction speed by measuring the time taken to respond to prompts",
-    imgSrc:"assets/response.png"
+    title: "Reaction-time tester",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Reaction-Time-Tester",
+    description: "A React app that tests your reaction speed by measuring the time taken to respond to prompts",
+    imgSrc: "assets/response.png"
   },
   {
-    title:"Learning Streak Tracker",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Learning%20Streak%20Tracker",
-    description:"A React app that tracks and motivates your daily learning streaks to build consistent study habits.",
-    imgSrc:"assets/streak.png"
+    title: "Learning Streak Tracker",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Learning%20Streak%20Tracker",
+    description: "A React app that tracks and motivates your daily learning streaks to build consistent study habits.",
+    imgSrc: "assets/streak.png"
   },
   {
-    title:"Stackoverflow Clone",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Stackoverflow-Clone",
-    description:"A Stackoverflow clone is a platform where users can ask questions, provide answers, and engage in discussions on various topics.",
-    imgSrc:"assets/stackoverflow.png"
+    title: "Stackoverflow Clone",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Stackoverflow-Clone",
+    description: "A Stackoverflow clone is a platform where users can ask questions, provide answers, and engage in discussions on various topics.",
+    imgSrc: "assets/stackoverflow.png"
 
   },
   {
-    title:"Simple-auth-kit",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/simple-auth-kit",
-    description:"A simple and reusable Node.js authentication package using **MongoDB**, **JWT**, and **bcrypt**. Just plug it into your frontend project and go!",
-    imgSrc:"assets/Simple-auth-kit.png"
+    title: "Simple-auth-kit",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/simple-auth-kit",
+    description: "A simple and reusable Node.js authentication package using **MongoDB**, **JWT**, and **bcrypt**. Just plug it into your frontend project and go!",
+    imgSrc: "assets/Simple-auth-kit.png"
 
   },
- 
+  {
+    "title": "Memory-Card-Game",
+    "url": "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Memory-Card-Game",
+    "description": "Test your memory by flipping cards to find matching pairs. A classic game built with React to sharpen your focus and have fun!",
+    "imgSrc": "assets/memory.png"
+  },
+
 ];
 
 const container = document.getElementById('projects-container');
