@@ -544,8 +544,12 @@ const projects = [
     url: "https://github.com/Anas2604-web/React-projects-for-beginners/tree/add-mood-journal-app/Mood-Journal",
     description: "A simple and responsive React app to select your mood and enjoy animated messages built with **React**, **Vite**, and **GSAP**.",
     imgSrc: "assets/Mood-Journal.png"
+  },
+  {
+    title: "GreenLeaf-Houseplant store with redux",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/GreenLeaf-Houseplant%20store",
+    description:"GreenLeaf is an interactive React + Redux application for houseplant lovers. It allows users to browse unique houseplants,add them to a cart, and manage purchases with a smooth and intuitive interface.",
   }
-
 
 ];
 
