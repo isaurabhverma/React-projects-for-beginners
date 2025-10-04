@@ -544,6 +544,12 @@ const projects = [
     url: "https://github.com/Anas2604-web/React-projects-for-beginners/tree/add-mood-journal-app/Mood-Journal",
     description: "A simple and responsive React app to select your mood and enjoy animated messages built with **React**, **Vite**, and **GSAP**.",
     imgSrc: "assets/Mood-Journal.png"
+  },
+  {
+    title: "Video calling App",
+    url: "https://github.com/Tusharkumar200/hacktoberfest2025-React-projects/tree/developer/video_calling_app",
+    description: "A video calling app built with React and ZegoCloud that allows users to make video calls to each other in real-time.",
+    imgSrc: "assets/video_calling.png"
   }
 
 
