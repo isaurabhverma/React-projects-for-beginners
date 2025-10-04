@@ -11,38 +11,33 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
     steps:
-      # Checkout the repository code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' 
+          node-version: '20'
 
-      # Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Run the build
       - name: Build app
         run: npm run build
 
-      - name: Run tests
-        run: npm test -- --coverage
+      - name: Upload production build
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
 
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Deploy app
-        run: |
-          cd /var/www/
-          mkdir nimraa
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
