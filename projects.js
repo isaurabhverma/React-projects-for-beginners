@@ -1,6 +1,12 @@
 // Please add your project details in the below array.
 const projects = [
   {
+    title: "Retro Desktop Simulator",
+    url: "https://github.com/AdityaDwiNugroho/React-projects-for-beginners/tree/main/Retro-Desktop-Simulator",
+    description: "A nostalgic Windows 95-style desktop simulator with draggable windows, working calculator, notepad, and paint applications. Experience the classic 90s computing interface.",
+    imgSrc: "assets/retro-desktop.svg"
+  },
+  {
     title: "Mood Tracker App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/mood-tracker",
     description: "Start your coding journey with a beginner-friendly React Mood Tracker App, a simple and easy way for users to keep a weekly track of their mood and understand themselves better.",
@@ -551,7 +557,6 @@ const projects = [
     description: "A video calling app built with React and ZegoCloud that allows users to make video calls to each other in real-time.",
     imgSrc: "assets/video_calling.png"
   }
-
 
 ];
 
