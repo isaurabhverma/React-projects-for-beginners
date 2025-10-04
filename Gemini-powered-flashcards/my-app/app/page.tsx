@@ -250,10 +250,6 @@ export default function Home() {
       }
     };
     
-    // Check if the API key is a placeholder
-    // if (apiKey === "AIzaSyDTMnQSlctVV-D980JqkumIQcgtBGQ3Mns") {
-    //     throw new Error("API Key is a placeholder. Please get your own key from Google AI Studio and replace it in the code.");
-    // }
     
     let response;
     try {
