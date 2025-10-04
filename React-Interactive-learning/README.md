@@ -1,16 +1,34 @@
-# React + Vite
+# React Interactive Learning Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beginner-friendly, interactive React learning platform where users can experiment with React concepts in real-time. This project is designed for Hacktoberfest contributions and is perfect for anyone looking to learn React by **doing**, not just reading.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Zero-Setup Live Coding Sandboxes**  
+  Instantly write, edit, and run React code directly in your browser—no downloads or environment setup required.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **Progressive Mastery (Chapter System)**  
+  Learn one concept at a time. Each successfully completed chapter unlocks the next one.
 
-## Expanding the ESLint configuration
+- **Hands-On Learning**  
+  Combine concise explanations with live coding exercises for instant feedback and reinforcement.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Auto-Save Progress**  
+  Your code and progress are saved locally so you can continue where you left off.
+
+---
+
+## 📚 Project Structure
+
+```
+
+src/
+├─ components/
+│ ├─ ui/ # Reusable UI components (shadcn/ui)
+│ ├─ Dashboard/ # Dashboard-related components
+│ └─ Homepage/ # Homepage components
+├─ libs/ # Utility functions, helpers, or libraries
+├─ App.jsx # Main app component
+```
