@@ -552,9 +552,10 @@ const projects = [
     imgSrc: "assets/Mood-Journal.png"
   },
   {
-    title: "GreenLeaf-Houseplant store with redux",
-    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/GreenLeaf-Houseplant%20store",
-    description:"GreenLeaf is an interactive React + Redux application for houseplant lovers. It allows users to browse unique houseplants,add them to a cart, and manage purchases with a smooth and intuitive interface.",
+    title: "Video calling App",
+    url: "https://github.com/Tusharkumar200/hacktoberfest2025-React-projects/tree/developer/video_calling_app",
+    description: "A video calling app built with React and ZegoCloud that allows users to make video calls to each other in real-time.",
+    imgSrc: "assets/video_calling.png"
   }
 
 ];
