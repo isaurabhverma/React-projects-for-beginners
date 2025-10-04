@@ -1,0 +1,76 @@
+.paint {
+  display: flex;
+  flex-direction: column;
+  background: #c0c0c0;
+  height: 100%;
+}
+
+.paint-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: #c0c0c0;
+  border-bottom: 2px solid #808080;
+}
+
+.tool-btn {
+  background: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  padding: 4px 12px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.tool-btn:active {
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.brush-size {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.brush-size input[type="range"] {
+  width: 80px;
+}
+
+.color-palette {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.color-box.selected {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #000;
+}
+
+.paint-canvas-container {
+  flex: 1;
+  padding: 8px;
+  overflow: auto;
+  background: #808080;
+}
+
+.paint-canvas {
+  background: white;
+  cursor: crosshair;
+  border: 1px solid #000;
+}

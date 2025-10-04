@@ -1,0 +1,39 @@
+.notepad {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #c0c0c0;
+}
+
+.notepad-menu {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  background: #c0c0c0;
+  border-bottom: 1px solid #808080;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background: #000080;
+  color: white;
+}
+
+.notepad-textarea {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  resize: none;
+  outline: none;
+  background: white;
+  line-height: 1.5;
+}
