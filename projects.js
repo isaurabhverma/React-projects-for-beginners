@@ -419,7 +419,7 @@ const projects = [
     title: "React Docs Blog",
     url: "https://github.com/YOUR-USERNAME/React-projects-for-beginners/tree/dev/react-docs-blog",
     description: "A React-based blog app documenting React concepts and interview questions, built with a clean and structured layout for learning and reference.",
-    imgSrc: "assets/react-docs-blog.png"
+    imgSrc: "assets/doc.webp"
   },
 
 
@@ -556,6 +556,55 @@ const projects = [
     url: "https://github.com/Tusharkumar200/hacktoberfest2025-React-projects/tree/developer/video_calling_app",
     description: "A video calling app built with React and ZegoCloud that allows users to make video calls to each other in real-time.",
     imgSrc: "assets/video_calling.png"
+  },
+
+
+  {
+    title: "Shopping Cart Redux App",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Shopping-Cart-Redux-app",
+    description: "A shopping cart application built using React and Redux for managing products and cart state efficiently.",
+    imgSrc: "assets/cart.jpeg"
+  },
+  {
+    title: "Random Joke Generator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Random-Joke-Generator",
+    description: "A fun React app that generates random jokes fetched from a public API to keep users entertained.",
+    imgSrc: "assets/meme.jpeg"
+  },
+  {
+    title: "Random Advice Generator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Random-Advice-Generator",
+    description: "A simple React app that fetches random advice from an API to offer motivational or thoughtful quotes.",
+    imgSrc: "assets/advice.jpeg"
+  },
+  {
+    title: "React Interactive Learning",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/React-Interactive-learning",
+    description: "An interactive learning platform built with React, allowing users to practice and learn concepts in real time.",
+    imgSrc: "assets/elrn.jpeg"
+  },
+  {
+    title: "Retro Desktop Simulator",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Retro-Desktop-Simulator",
+    description: "A retro-style Windows 95-like desktop simulator created in React for a nostalgic user experience.",
+    imgSrc: "assets/win95.jpeg"}, 
+  {
+    title: "GreenLeaf Houseplant Store",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/GreenLeaf-Houseplant%20store",
+    description: "An e-commerce React app for browsing, searching, and purchasing houseplants online.",
+    imgSrc: "assets/houseplant.jpeg"
+  },
+  {
+    title: "Mood Journal",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Mood-Journal",
+    description: "A React-based mood tracking journal that allows users to log their emotions and monitor progress over time.",
+    imgSrc: "assets/mood.jpeg"
+  },
+  {
+    title: "Memory Card Game",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Memory-Card-Game",
+    description: "A fun and challenging memory card game built in React to test and improve short-term memory.",
+    imgSrc: "assets/puzz.jpeg"
   }
 
 ];
