@@ -609,12 +609,15 @@ const projects = [
 
 ];
 
+// Render all projects inside the container
 const container = document.getElementById('projects-container');
 
-projects.forEach(project => {
-  const projectDiv = document.createElement('div');
-  projectDiv.className = 'col-md-2 mb-4 d-md-inline-block';
-  projectDiv.innerHTML = `
+function renderProjects(list) {
+  container.innerHTML = ''; // clear existing
+  list.forEach(project => {
+    const projectDiv = document.createElement('div');
+    projectDiv.className = 'col-md-2 mb-4 d-md-inline-block';
+    projectDiv.innerHTML = `
       <div class="custom-card text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="${project.description}">
         <div class="card-body">
           <a href="${project.url}" target="_blank">
@@ -624,5 +627,21 @@ projects.forEach(project => {
         </div>
       </div>
     `;
-  container.appendChild(projectDiv);
+    container.appendChild(projectDiv);
+  });
+}
+
+// Initially render all
+renderProjects(projects);
+
+// Add search functionality
+const searchInput = document.getElementById('project-search-input');
+
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  const filtered = projects.filter(p => 
+    p.title.toLowerCase().includes(query) ||
+    p.description.toLowerCase().includes(query)
+  );
+  renderProjects(filtered);
 });
