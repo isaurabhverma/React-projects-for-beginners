@@ -27,12 +27,12 @@ const Navbar = () => {
           >
             About us
           </a>
-          {/* <a
-            href="/profile"
+           <a
+            href="/article"
             className="text-white hover:text-red-500 hover:underline"
           >
-            Profile
-          </a> */}
+            Articles 
+          </a>
         </div>
       </div>
     </nav>

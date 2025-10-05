@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Intro Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* A deep, vibrant blue background */
+        body {
+            background-color: #2563eb; /* Tailwind's bg-blue-600 */
+        }
+
+        /* CSS for intro screen animations */
+        @keyframes pop-in-bouncy {
+            0% {
+                opacity: 0;
+                transform: scale(0.2) translateY(-100px) rotate(-90deg);
+            }
+            60% {
+                opacity: 1;
+                transform: scale(1.5) translateY(30px) rotate(15deg);
+            }
+            80% {
+                transform: scale(0.9) translateY(-15px) rotate(-8deg);
+            }
+            100% {
+                transform: scale(1) translateY(0) rotate(0);
+            }
+        }
+
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Simulates a "glossy black" effect for the subtitle text */
+        .glossy-black {
+            color: #1a202c; /* A very dark gray, almost black */
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="text-white font-sans flex items-center justify-center min-h-screen p-4 overflow-hidden">
+
+    <!-- Intro screen with animation -->
+    <div id="intro-screen" class="fixed inset-0 flex flex-col items-center justify-center z-50 transition-opacity duration-1000 ease-out">
+        <h1 class="text-6xl sm:text-8xl font-extrabold text-yellow-300 drop-shadow-lg select-none">
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0s]">L</span>
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0.01s]">o</span>
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0.02s]">o</span>
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0.03s]">m</span>
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0.04s]">y</span>
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0.1s]"> </span>
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0.11s]">G</span>
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0.12s]">o</span>
+            <span class="inline-block animate-[pop-in-bouncy_0.8s_ease-out_forwards] [animation-delay:0.13s]">!</span>
+        </h1>
+        <p id="intro-subtitle" class="text-xl sm:text-2xl mt-4 glossy-black opacity-0 animate-[fade-in-up_1s_ease-out_forwards] [animation-delay:1.5s]">
+            Your learning adventure starts here
+        </p>
+    </div>
+
+</body>
+</html>

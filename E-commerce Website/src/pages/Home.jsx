@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Spinner from "../components/Spinner";
-import Product from "../components/Product"
+import Product from "../components/Product";
 
 const Home = () => {
   const API_URL = "https://fakestoreapi.com/products";
@@ -28,7 +28,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-screen flex-col">
+    <div className="flex justify-center items-center flex-col">
       {
         loading ? <Spinner /> : 
         posts.length > 0 ?
@@ -43,8 +43,7 @@ const Home = () => {
           <p>No data found</p>
         </div>)
       }
-
-    </div>
+    </div> 
   );
 };
 

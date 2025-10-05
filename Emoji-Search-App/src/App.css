@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: #f8f9fa; /* Light background */
+  color: #212529; /* Dark text */
+}
+
+body.dark {
+  background-color: #212529; /* Dark background */
+  color: #f8f9fa; /* Light text */
+}

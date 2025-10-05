@@ -1,0 +1,1 @@
+- [ ] Add Hacktoberfest logo (10px) centered on the page in index.html

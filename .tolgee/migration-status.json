@@ -1,0 +1,72 @@
+{
+  "BMI-Calculator/src/components/BMICalculator.jsx": {
+    "migrated": true,
+    "keys": [
+      {
+        "name": "bmi-calculator-title",
+        "description": "Message displayed when BMI indicates underweight",
+        "default": "Underweight"
+      },
+      {
+        "name": "bmi-calculator-height-label",
+        "description": "Message displayed when BMI indicates normal weight",
+        "default": "Normal weight"
+      },
+      {
+        "name": "bmi-calculator-weight-label",
+        "description": "Message displayed when BMI indicates overweight",
+        "default": "Overweight"
+      },
+      {
+        "name": "bmi-calculator-calculate-button",
+        "description": "Message displayed when BMI indicates obesity",
+        "default": "Obese"
+      },
+      {
+        "name": "bmi-calculator-your-bmi",
+        "description": "Message displayed when height and weight are invalid",
+        "default": "Please enter valid height and weight"
+      },
+      {
+        "name": "bmi-calculator-reset-button",
+        "description": "Title of the BMI Calculator component",
+        "default": "BMI Calculator"
+      },
+      {
+        "name": "",
+        "description": "Label for the height input field in meters",
+        "default": "Height (meters)"
+      },
+      {
+        "name": "",
+        "description": "Placeholder for the height input field",
+        "default": "e.g., 1.75"
+      },
+      {
+        "name": "",
+        "description": "Label for the weight input field in kilograms",
+        "default": "Weight (kg)"
+      },
+      {
+        "name": "",
+        "description": "Placeholder for the weight input field",
+        "default": "e.g., 70"
+      },
+      {
+        "name": "",
+        "description": "Text for the calculate button",
+        "default": "Calculate BMI"
+      },
+      {
+        "name": "",
+        "description": "Message displayed with user's BMI value",
+        "default": "Your BMI: {bmi}"
+      },
+      {
+        "name": "",
+        "description": "Text for the reset button",
+        "default": "Reset"
+      }
+    ]
+  }
+}

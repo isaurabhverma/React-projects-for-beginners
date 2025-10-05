@@ -18,7 +18,7 @@ const FlashlightToggle = () => {
           {/* Bulb Glass */}
           <div
             className={`absolute inset-0 rounded-full bg-yellow-300 ${
-              isOn ? 'opacity-90 shadow-[0px_0px_30px_15px_rgba(255,223,72,0.8)]' : 'opacity-50'
+              isOn ? 'opacity-100 shadow-[0px_0px_30px_15px_rgba(255,223,72,0.8)]' : 'opacity-50'
             }`}
           />
           

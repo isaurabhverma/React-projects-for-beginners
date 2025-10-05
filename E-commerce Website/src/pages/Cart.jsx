@@ -23,7 +23,7 @@ const Cart = () => {
               ))
             }
           </div>
-          <div className="mt-32 flex flex-col justify-between h-[500px] fixed right-72">
+          <div className="mt-32 flex flex-col justify-between h-[500px] ml-8">
             <div>
               <div className="uppercase text-green-700 font-semibold">Your Cart</div>
               <div className="uppercase text-green-700 font-bold text-4xl">Summary</div>

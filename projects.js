@@ -1,6 +1,12 @@
 // Please add your project details in the below array.
 const projects = [
   {
+    title: "Retro Desktop Simulator",
+    url: "https://github.com/AdityaDwiNugroho/React-projects-for-beginners/tree/main/Retro-Desktop-Simulator",
+    description: "A nostalgic Windows 95-style desktop simulator with draggable windows, working calculator, notepad, and paint applications. Experience the classic 90s computing interface.",
+    imgSrc: "assets/retro-desktop.svg"
+  },
+  {
     title: "Mood Tracker App",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/mood-tracker",
     description: "Start your coding journey with a beginner-friendly React Mood Tracker App, a simple and easy way for users to keep a weekly track of their mood and understand themselves better.",
@@ -17,6 +23,12 @@ const projects = [
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/Currency-Converter",
     description: "Start your coding journey with a beginner-friendly React Currency-Converter App, a simple and efficient way for users to convert between different currencies in real-time ",
     imgSrc: "assets/currency.png"
+  },
+  {
+    title: "Memory Game App",
+    url: "https://github.com/Asfand-Yar-dev/React-projects-for-beginners/tree/main/memory-game",
+    description: "A simple and fun memory matching game built with React. Flip the cards, find matching pairs, and test your memory skills!",
+    imgSrc: "assets/memory-game.jpeg"
   },
   {
     title: "Tip Calculator App",
@@ -403,7 +415,14 @@ const projects = [
     description: "A secure React-based password manager built with the MERN stack for storing and managing credentials.",
     imgSrc: "assets/Manager.png"
   },
-  
+  {
+    title: "React Docs Blog",
+    url: "https://github.com/YOUR-USERNAME/React-projects-for-beginners/tree/dev/react-docs-blog",
+    description: "A React-based blog app documenting React concepts and interview questions, built with a clean and structured layout for learning and reference.",
+    imgSrc: "assets/react-docs-blog.png"
+  },
+
+
   {
     title: "iNoteBook - A Platform for Notes",
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/inotebook",
@@ -483,37 +502,62 @@ const projects = [
     imgSrc: "assets/wallet.png"
   },
   {
-    title:"Patreon clone",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main/patreon",
-    description:"A Patreon clone is a platform that enables creators to earn recurring income by offering exclusive content and rewards to supporters",
-    imgSrc:"assets/patreon.png"
+    title: "Patreon clone",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main/patreon",
+    description: "A Patreon clone is a platform that enables creators to earn recurring income by offering exclusive content and rewards to supporters",
+    imgSrc: "assets/patreon.png"
   },
   {
-    title:"Flash light toggle",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Flashlight-Toggle-App",
-    description:"This app changes the background color to simulate a flashlight turning on and off.",
-    imgSrc:"assets/flashlight.png"
+    title: "Flash light toggle",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Flashlight-Toggle-App",
+    description: "This app changes the background color to simulate a flashlight turning on and off.",
+    imgSrc: "assets/flashlight.png"
   },
   {
-    title:"Reaction-time tester",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Reaction-Time-Tester",
-    description:"A React app that tests your reaction speed by measuring the time taken to respond to prompts",
-    imgSrc:"assets/response.png"
+    title: "Reaction-time tester",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Reaction-Time-Tester",
+    description: "A React app that tests your reaction speed by measuring the time taken to respond to prompts",
+    imgSrc: "assets/response.png"
   },
   {
-    title:"Learning Streak Tracker",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Learning%20Streak%20Tracker",
-    description:"A React app that tracks and motivates your daily learning streaks to build consistent study habits.",
-    imgSrc:"assets/streak.png"
+    title: "Learning Streak Tracker",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Learning%20Streak%20Tracker",
+    description: "A React app that tracks and motivates your daily learning streaks to build consistent study habits.",
+    imgSrc: "assets/streak.png"
   },
   {
-    title:"Stackoverflow Clone",
-    url:"https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Stackoverflow-Clone",
-    description:"A Stackoverflow clone is a platform where users can ask questions, provide answers, and engage in discussions on various topics.",
-    imgSrc:"assets/stackoverflow.png"
+    title: "Stackoverflow Clone",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Stackoverflow-Clone",
+    description: "A Stackoverflow clone is a platform where users can ask questions, provide answers, and engage in discussions on various topics.",
+    imgSrc: "assets/stackoverflow.png"
 
   },
- 
+  {
+    title: "Simple-auth-kit",
+    url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/simple-auth-kit",
+    description: "A simple and reusable Node.js authentication package using **MongoDB**, **JWT**, and **bcrypt**. Just plug it into your frontend project and go!",
+    imgSrc: "assets/Simple-auth-kit.png"
+
+  },
+  {
+    "title": "Memory-Card-Game",
+    "url": "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Memory-Card-Game",
+    "description": "Test your memory by flipping cards to find matching pairs. A classic game built with React to sharpen your focus and have fun!",
+    "imgSrc": "assets/memory.png"
+  },
+  {
+    title: "Mood Journal App 🌈",
+    url: "https://github.com/Anas2604-web/React-projects-for-beginners/tree/add-mood-journal-app/Mood-Journal",
+    description: "A simple and responsive React app to select your mood and enjoy animated messages built with **React**, **Vite**, and **GSAP**.",
+    imgSrc: "assets/Mood-Journal.png"
+  },
+  {
+    title: "Video calling App",
+    url: "https://github.com/Tusharkumar200/hacktoberfest2025-React-projects/tree/developer/video_calling_app",
+    description: "A video calling app built with React and ZegoCloud that allows users to make video calls to each other in real-time.",
+    imgSrc: "assets/video_calling.png"
+  }
+
 ];
 
 const container = document.getElementById('projects-container');

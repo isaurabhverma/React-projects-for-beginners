@@ -1,0 +1,159 @@
+.base64-converter {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.input-section h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.char-count {
+  font-size: 12px;
+  color: #7f8c8d;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.encode {
+  background-color: #27ae60;
+  color: white;
+}
+
+.encode:hover {
+  background-color: #219a52;
+}
+
+.decode {
+  background-color: #3498db;
+  color: white;
+}
+
+.decode:hover {
+  background-color: #2980b9;
+}
+
+.secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #7f8c8d;
+}
+
+.clear {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
+
+.utility-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.error-message {
+  background-color: #ffeaa7;
+  color: #d63031;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px 0;
+  border-left: 4px solid #e17055;
+}
+
+.examples {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f2f6;
+  border-radius: 8px;
+}
+
+.examples h4 {
+  margin-top: 0;
+  color: #2d3436;
+}
+
+.example-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.example {
+  background-color: #a29bfe;
+  color: white;
+}
+
+.example:hover {
+  background-color: #6c5ce7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .base64-converter {
+    padding: 10px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
