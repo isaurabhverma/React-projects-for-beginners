@@ -1,0 +1,70 @@
+.main {
+  background-color: #1f1f1f;
+  height: 100vh;
+  width: 100vw;
+}
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 350px;
+  align-self: center;
+  margin-top: 200px;
+}
+.mic-icon {
+  color: red;
+  font-size: 40px;
+}
+.text-box {
+  color: #9aa0a6;
+  font-size: 30px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  animation: heartbeat 1s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    background-color: white;
+  }
+  50% {
+    transform: scale(1.15);
+    background-color: white;
+  }
+  100% {
+    transform: scale(1);
+    background-color: white;
+  }
+}
+.cross-container {
+  position: relative;
+  top: 1%;
+  left: 98%;
+  cursor: pointer;
+}
+.cross-icon {
+  font-size: 20px;
+  color: #ffffff70;
+}
+.cross-icon:hover {
+  color: #ffffff97;
+}
+@media screen and (max-width:700px){
+  .content-box{
+    flex-direction: column;
+    gap: 150px;
+  }
+  .cross-container{
+    left: 90%;
+  }
+  
+}
