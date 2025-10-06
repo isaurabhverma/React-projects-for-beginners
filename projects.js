@@ -539,18 +539,7 @@ const projects = [
     imgSrc: "assets/Simple-auth-kit.png"
 
   },
-  {
-    "title": "Memory-Card-Game",
-    "url": "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Memory-Card-Game",
-    "description": "Test your memory by flipping cards to find matching pairs. A classic game built with React to sharpen your focus and have fun!",
-    "imgSrc": "assets/memory.png"
-  },
-  // {
-  //   title: "Mood Journal App 🌈",
-  //   url: "https://github.com/Anas2604-web/React-projects-for-beginners/tree/add-mood-journal-app/Mood-Journal",
-  //   description: "A simple and responsive React app to select your mood and enjoy animated messages built with **React**, **Vite**, and **GSAP**.",
-  //   imgSrc: "assets/Mood-Journal.png"
-  // },
+
   {
     title: "Video calling App",
     url: "https://github.com/Tusharkumar200/hacktoberfest2025-React-projects/tree/developer/video_calling_app",
@@ -605,9 +594,11 @@ const projects = [
     url: "https://github.com/ianshulx/React-projects-for-beginners/tree/main-616/Memory-Card-Game",
     description: "A fun and challenging memory card game built in React to test and improve short-term memory.",
     imgSrc: "assets/puzz.jpeg"
-  }
+  },
+  
 
 ];
+
 
 // Render all projects inside the container
 const container = document.getElementById('projects-container');
