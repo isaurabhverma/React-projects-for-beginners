@@ -1,0 +1,61 @@
+.topbar{
+    background-color: rgb(225, 27, 35);
+  }
+  .inner-topbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18rem;
+  }
+  .topbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 0 40px;
+  }
+  .notclicked{
+    list-style: none;
+    color: #FFFFFF;
+    border: 1px rgb(164, 28, 28) solid;
+    background-color: rgb(225, 27, 35);
+    font-size: 14px;
+    padding: 15px 36px;
+    font-weight: 900;
+  }
+  .clicked{
+    list-style: none;
+    border: none;
+    color: #2c2727;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    padding: 15px 36px;
+    font-weight: 900;
+  }
+  #topbar-option-list{
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0 0 0 15px;
+  }
+  #topbar-option-list a{
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .fa-mobile-phone{
+    font-size: 18px;
+  }
+  /* General styles */
+.topbar-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+/* Hide the second ul on screens smaller than 768px (tablets and mobile) */
+@media screen and (max-width: 768px) {
+  .topbar-list-options {
+      display: none;
+  }
+}

@@ -1,0 +1,113 @@
+.product-page {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three products per row */
+    gap: 20px; /* Space between products */
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-gallery {
+    margin-bottom: 10px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    text-align: center;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.size-selection {
+    margin: 20px 0;
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap sizes if there are many */
+}
+
+.size-button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.size-button:hover {
+    background-color: #e0e0e0;
+}
+
+.size-button.active {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05); /* Slightly enlarge the active button */
+}
+
+.quantity-selection {
+    margin: 20px 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.add-to-cart, .add-to-wishlist {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.add-to-wishlist {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
+.quantity-selection {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Align label and select vertically */
+    align-items: center; /* Center the items */
+}
+
+.quantity-selection label {
+    font-size: 18px; /* Make the label more prominent */
+    margin-bottom: 10px; /* Space between label and select */
+}
+
+.quantity-selection select {
+    padding: 5px 10px; /* Add padding for better touch target */
+    font-size: 16px; /* Match the font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    transition: border-color 0.3s; /* Smooth border color transition */
+    width: 60px; /* Set a fixed width for the dropdown */
+}
