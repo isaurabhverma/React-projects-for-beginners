@@ -1,0 +1,33 @@
+.privacy-container {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-heading {
+    color: #555;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .content {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .content strong {
+    font-weight: bold;
+  }
+  
+  p.content:last-child {
+    margin-bottom: 0;
+  }
+  
