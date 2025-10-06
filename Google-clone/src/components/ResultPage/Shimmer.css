@@ -1,0 +1,62 @@
+.shimmer-effect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.shine {
+  background: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 8px;
+}
+
+.main-shine {
+  height: 100px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.line {
+  height: 20px;
+  border-radius: 4px;
+}
+
+.line-short {
+  width: 60%;
+}
+
+.line-medium {
+  width: 80%;
+}
+
+.line-long {
+  width: 100%;
+}
+
+.photo {
+  width: 100%;
+  max-width: 500px;
+  height: 150px;
+  border-radius: 12px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

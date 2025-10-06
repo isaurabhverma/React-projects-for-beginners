@@ -1,0 +1,13 @@
+.app {
+  min-height: 100vh;
+  background-color: #202124;
+  color: #e8eaed;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}

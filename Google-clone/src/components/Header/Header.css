@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 20px;
+    align-items: center;
+  }
+  
+  .left-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 6px;
+    margin-top: 8px;
+  }
+  .right-nav1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+  }
+  .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 8px;
+  }
+
+  .header a {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
+
+  .flaskIcon{
+    font-size: 22px;
+    color: #e8e8e8;
+  }
+
+  .gridIcon{
+    font-size: 20px;
+    color: #eef0ff;
+    stroke-width: 3;
+    cursor: pointer;
+  }  
+  .apps-button {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .apps-button:hover {
+    background-color: rgba(60,64,67,0.08);
+  }
+  
+  .apps-icon {
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+  }
+  
+  .avatar-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+  }
