@@ -1,0 +1,38 @@
+.categories-container {
+    width: 80%;
+    
+  }
+  .subheadings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: center;
+    color: #282c3f;
+    text-transform: uppercase;
+  }
+  
+  .card {
+    background-color: white;
+    border: none;
+    text-align: center;
+    transition: transform 0.3s;
+
+  }
+  
+  .card img {
+    width: 96%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 10px;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  

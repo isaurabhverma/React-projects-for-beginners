@@ -1,0 +1,20 @@
+:root {
+  --text: #111827;
+  --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text);
+  background: var(--bg);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a { color: inherit; }
+h1, h2, h3, h4, p { margin: 0 0 8px 0; }

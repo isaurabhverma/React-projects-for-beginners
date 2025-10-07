@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Projects for beginners</title>
+  <!-- ICON || FAVICON -->
+  <link rel="shortcut icon" type="image/png" href="/rp.png" />
+  <!-- FOR IE -->
+  <link rel="apple-touch-icon" type="image/png" href="/rp.png" />
+  <!-- FOR iPhone -->
+  <link rel="icon" type="image/png" href="/rp.png" />
+  <!-- FOR Browser Chrome, Opera, etc -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="logo-div" style="position: fixed; top: 15px; right: 88%; transform: translateX(-50%); z-index: 1000; transition: opacity 0.9s ease;">
+    <img src="./logo-hacktoberfest-12.svg" style="width: 100px; margin-top: 20px;" />
+  </div>
+
+  <!-- Floating Navbar -->
+  <nav class="floating-navbar">
+
+    <div class="navbar-container">
+      <div class="navbar-left">
+        <img src="./assets/logo.png" alt="react-icon" />
+        <span>React Projects</span>
+      <img src="./heroicon-animation.dd8cd700.gif" alt="hacktoberfest">
+
+      </div>
+      
+
+      <!-- Center Section: Navigation Links -->
+
+      <div class="navbar-center">
+        <ul class="navbar-menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contributors">Contributors</a></li>
+          <li><a href="https://github.com/ianshulx/React-projects-for-beginners" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Section: Hamburger Menu -->
+      <div class="navbar-right">
+      </div>
+    </div>
+    <div class="button-container-below-navbar">
+      <div id="menu-label" class="menu-label" tabindex="0" role="button" aria-expanded="false"
+        aria-controls="menu-buttons">Menu</div>
+      <div id="menu-buttons" class="inner-buttons hidden">
+        <button class="inner-btn star-btn"
+          onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/stargazers', '_blank')">
+          <i class="bi bi-star-fill"></i> Star
+        </button>
+        <button class="inner-btn fork-btn"
+          onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/network/members', '_blank')">
+          <i class="bi bi-code-branch"></i> Fork
+        </button>
+        <button class="inner-btn issues-btn"
+          onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/issues', '_blank')">
+          <i class="bi bi-exclamation-circle-fill"></i> Issues
+        </button>
+        <button class="inner-btn pr-btn"
+          onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/pulls', '_blank')">
+          <i class="bi bi-git-pull-request"></i> Pull Requests
+        </button>
+        <button class="inner-btn watchers-btn"
+          onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/watchers', '_blank')">
+          <i class="bi bi-eye"></i> Watchers
+        </button>
+        <button class="inner-btn contributors-btn"
+          onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/graphs/contributors', '_blank')">
+          <i class="bi bi-people-fill"></i> Contributors
+        </button>
+        <button class="inner-btn download-btn"
+          onclick="window.open('https://github.com/ianshulx/React-projects-for-beginners/releases', '_blank')">
+          <i class="bi bi-download"></i> Download
+        </button>
+        <button class="inner-btn maintainer-btn" onclick="window.open('https://github.com/ianshulx', '_blank')">
+          <i class="bi bi-person-badge-fill"></i> Maintainer
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Project Section -->
+  <section id="projects">
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!-- <h2>Projects List</h2> -->
+          
+<div id="projects-search"
+     style="
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-bottom: 0px;
+        padding-right: 130px;
+     ">
+  <input id="project-search-input"
+         type="search"
+         placeholder="Search projects..."
+         aria-label="Search projects"
+         style="
+            width: 260px;
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            outline: none;
+         " />
+  <button id="project-clear-btn"
+          style="
+             padding: 8px 14px;
+             font-size: 14px;
+             border-radius: 8px;
+             border: none;
+             background: rgba(255,255,255,0.2);
+             color: #fff;
+             cursor: pointer;
+             transition: background 0.2s;
+          "
+          onmouseover="this.style.background='rgba(255,255,255,0.3)'"
+          onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+    Clear
+  </button>
+</div>
+
+
+        
+        <div id="projects-container" class="mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contributors" class="" style="padding: 20px">
+    <h1 class="hero-text ms-5">Our Contributors</h1>
+    <div id="contributors-box">
+      <ul id="contributors-list">
+        <!-- Contributors will be displayed here -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      <a href="https://github.com/ianshulx" target="_blank"><i class="bi bi-github"></i></a>
+      &nbsp;
+      <a href="https://www.linkedin.com/in/ianshulx/" target="_blank"> <i class="bi bi-linkedin"></i></a>
+      &nbsp;
+      <a href="https://www.instagram.com/hackers.core/?hl=en" target="_blank"> <i class="bi bi-instagram"></i></a>
+
+      <br>
+      This repository is licensed under the MIT license. See the
+      <a href="https://github.com/ianshulx/React-projects-for-beginners/blob/main/LICENSE" target="_blank">LICENSE
+      </a>
+      file for more information.
+      </p>
+    </div>
+  </footer>
+  <script>
+    // Replace with your GitHub repository URL
+    const repoUrl =
+      "https://api.github.com/repos/ianshulx/React-Projects-for-beginners/contributors"
+
+    // Fetch contributors data from GitHub API
+    fetch(`${repoUrl}/contributors`)
+      .then((response) => response.json())
+      .then((data) => {
+        const contributorsList = document.getElementById("contributors-list");
+
+        // Loop through the contributors and create list items
+        data.forEach((contributor) => {
+          const listItem = document.createElement("li");
+          listItem.innerHTML = `
+                  <a href="${contributor.html_url}" target="_blank">
+                      <img src="${contributor.avatar_url}" alt="${contributor.login}" width="100" height="100">
+                      <p>${contributor.login}</p>
+                  </a>
+              `;
+          contributorsList.appendChild(listItem);
+        });
+
+        // Update contributors count in menu button
+        const contributorsBtn = document.querySelector('.contributors-btn');
+        if (contributorsBtn) {
+          contributorsBtn.innerHTML = `<i class="bi bi-people-fill"></i> Contributors (${data.length})`;
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+
+    // Fetch repo details for stars, forks, watchers, etc.
+    fetch(repoUrl)
+      .then((response) => response.json())
+      .then((repoData) => {
+        // Update stars count
+        const starBtn = document.querySelector('.star-btn');
+        if (starBtn) {
+          starBtn.innerHTML = `<i class="bi bi-star-fill"></i> Star (${repoData.stargazers_count})`;
+        }
+        // Update forks count
+        const forkBtn = document.querySelector('.fork-btn');
+        if (forkBtn) {
+          forkBtn.innerHTML = `<i class="bi bi-code-branch"></i> Fork (${repoData.forks_count})`;
+        }
+        // Fetch open PRs count
+        fetch(`${repoUrl}/pulls?state=open`)
+          .then((response) => response.json())
+          .then((pullsData) => {
+            const prCount = pullsData.length;
+            const issuesCount = repoData.open_issues_count - prCount;
+            const watchersCount = repoData.subscribers_count;
+            // Fix NaN and undefined counts by validating values
+            const safeIssuesCount = Number.isInteger(issuesCount) && issuesCount >= 0 ? issuesCount : 0;
+            const safePrCount = Number.isInteger(prCount) && prCount >= 0 ? prCount : 0;
+            const safeWatchersCount = Number.isInteger(watchersCount) && watchersCount >= 0 ? watchersCount : 0;
+            // Update issues
+            const issuesBtn = document.querySelector('.issues-btn');
+            if (issuesBtn) {
+              issuesBtn.innerHTML = `<i class="bi bi-exclamation-circle-fill"></i> Issues (${safeIssuesCount})`;
+            }
+            // Update PRs
+            const prBtn = document.querySelector('.pr-btn');
+            if (prBtn) {
+              prBtn.innerHTML = `<i class="bi bi-git-pull-request"></i> Pull Requests (${safePrCount})`;
+            }
+            // Update Watchers
+            const watchersBtn = document.querySelector('.watchers-btn');
+            if (watchersBtn) {
+              watchersBtn.innerHTML = `<i class="bi bi-eye"></i> Watchers (${safeWatchersCount})`;
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching pulls:", error);
+          });
+      })
+      .catch((error) => {
+        console.error("Error fetching repo data:", error);
+      });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.floating-navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Fade logo on scroll
+    const logoDiv = document.getElementById('logo-div');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 50) {
+        logoDiv.style.opacity = '0';
+      } else {
+        logoDiv.style.opacity = '1';
+      }
+    });
+  </script>
+  <script src="projects.js"></script>
+  <script src="C:\Users\Priya Karn\React-projects-for-beginners\Data.js"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+    <defs>
+      <linearGradient id="bg">
+        <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+        <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+        <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+      </linearGradient>
+      <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+	s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+    </defs>
+    <g>
+      <use xlink:href='#wave' opacity=".3">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s" calcMode="spline"
+          values="270 230; -334 180; 270 230" keyTimes="0; .5; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave' opacity=".6">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s" calcMode="spline"
+          values="-270 230;243 220;-270 230" keyTimes="0; .6; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave' opacty=".9">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s" calcMode="spline"
+          values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+    </g>
+  </svg>
+</body>
+<script src="./menu-toggle.js"></script>
+
+</html>

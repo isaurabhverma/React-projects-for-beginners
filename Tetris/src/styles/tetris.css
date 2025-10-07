@@ -1,0 +1,404 @@
+/* Modernized Tetris styles */
+:root {
+  --bg: #0d0f17;
+  --panel: #161b29;
+  --panel-alt: #1f2638;
+  --accent: #646cff;
+  --accent-glow: #8891ff;
+  --danger: #ff3355;
+  --success: #3ddc97;
+  --text: #f5f7fa;
+  --muted: #7a8699;
+  --cell-size: 28px;
+  --radius: 10px;
+  --transition: 150ms ease;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(145deg, #0d0f17, #1b2233);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.app-center-shell {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.tetris-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+  flex-wrap: wrap;
+  color: var(--text);
+  max-width: 1200px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Scaler wrapper (added dynamically) */
+.tetris-scale-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.tetris-scale-inner {
+  transform-origin: top center;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid #222b3b;
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  position: relative;
+  box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.55), 0 0 0 1px #222b3b inset;
+  backdrop-filter: blur(8px);
+}
+
+.panel.main {
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--accent), var(--accent-glow));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stats {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 8px;
+}
+.stats div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  background: var(--panel-alt);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.stats label {
+  color: var(--muted);
+}
+.stats span {
+  font-weight: 600;
+}
+
+.stage-grid {
+  display: grid;
+  grid-template-rows: repeat(20, var(--cell-size));
+  grid-template-columns: repeat(10, var(--cell-size));
+  gap: 2px;
+  background: #070a11;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px -4px #000b, 0 0 0 1px #202a3b;
+  position: relative;
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background: #101726;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #1d2638;
+  transition: background var(--transition), transform var(--transition);
+}
+.cell.filled {
+  filter: brightness(1.05);
+}
+.cell.I {
+  background: #00e5ff;
+  box-shadow: 0 0 8px -2px #00e5ffaa inset, 0 0 6px #00e5ff55;
+}
+.cell.J {
+  background: #2d5bff;
+  box-shadow: 0 0 8px -2px #2d5bffaa inset, 0 0 6px #2d5bff55;
+}
+.cell.L {
+  background: #ff9e2c;
+  box-shadow: 0 0 8px -2px #ff9e2caa inset, 0 0 6px #ff9e2c55;
+}
+.cell.O {
+  background: #ffd500;
+  box-shadow: 0 0 8px -2px #ffd500aa inset, 0 0 6px #ffd50055;
+}
+.cell.S {
+  background: #2dff76;
+  box-shadow: 0 0 8px -2px #2dff76aa inset, 0 0 6px #2dff7655;
+}
+.cell.T {
+  background: #a243ff;
+  box-shadow: 0 0 8px -2px #a243ffaa inset, 0 0 6px #a243ff55;
+}
+.cell.Z {
+  background: #ff3355;
+  box-shadow: 0 0 8px -2px #ff3355aa inset, 0 0 6px #ff335555;
+}
+.cell.ghost {
+  background: #1a2536;
+  box-shadow: inset 0 0 0 1px #304156;
+  opacity: 0.35;
+}
+
+.overlay.status {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: 700;
+  background: #0d1320dd;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mini-section {
+  display: flex;
+  gap: 18px;
+  margin: 20px 0 14px;
+  justify-content: center;
+}
+.mini-wrapper {
+  text-align: center;
+}
+.mini-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+.mini-grid {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, var(--cell-size));
+  grid-template-rows: repeat(4, var(--cell-size));
+  gap: 2px;
+  background: #070a11;
+  padding: 6px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #202a3b;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.buttons button {
+  width: 100%;
+}
+
+button {
+  background: linear-gradient(145deg, #232c41, #1a2233);
+  color: var(--text);
+  border: 1px solid #2c374d;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px -1px #0009, 0 0 0 1px #2c374d inset;
+  transition: var(--transition);
+}
+button:hover {
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 3px 10px -2px #000c, 0 0 0 1px var(--accent) inset;
+}
+button:active {
+  transform: translateY(2px);
+}
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.help {
+  margin-top: 18px;
+  background: var(--panel-alt);
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.45;
+  box-shadow: inset 0 0 0 1px #2b3446;
+}
+.help ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  columns: 2;
+}
+.help li {
+  margin: 2px 0;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .tetris-layout {
+    gap: 32px;
+  }
+}
+/* Medium breakpoint: slightly reduce cell size */
+@media (max-width: 760px) {
+  :root {
+    --cell-size: 24px;
+  }
+  .tetris-layout {
+    gap: 36px;
+  }
+}
+/* Narrow phones: stack panels vertically and shrink stage */
+@media (max-width: 560px) {
+  :root {
+    --cell-size: 22px;
+  }
+  body {
+    align-items: flex-start;
+  }
+  .app-center-shell {
+    padding-top: 12px;
+  }
+  .tetris-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .panel {
+    width: 100%;
+    max-width: 440px;
+  }
+  .mini-section {
+    justify-content: center;
+  }
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .buttons button {
+    flex: 1 1 48%;
+  }
+  .help ul {
+    columns: 1;
+  }
+}
+/* Extra small devices: further shrink and ensure fit */
+@media (max-width: 420px) {
+  :root {
+    --cell-size: 19px;
+  }
+  .panel {
+    padding: 16px 16px;
+  }
+  .panel.main {
+    padding: 12px 14px;
+  }
+  .stage-grid {
+    padding: 8px;
+  }
+  .title {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .stats div {
+    font-size: 12px;
+  }
+}
+/* Ultra small fallback */
+@media (max-width: 350px) {
+  :root {
+    --cell-size: 17px;
+  }
+}
+
+/* Dynamic scale-down if still overflowing horizontally */
+@media (max-width: 330px) {
+  .tetris-layout {
+    transform: scale(0.95);
+  }
+}
+@media (max-width: 310px) {
+  .tetris-layout {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 290px) {
+  .tetris-layout {
+    transform: scale(0.82);
+  }
+}
+@media (max-width: 270px) {
+  .tetris-layout {
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 250px) {
+  .tetris-layout {
+    transform: scale(0.68);
+  }
+}
+
+/* Landscape phones with very limited vertical space */
+@media (max-height: 560px) and (orientation: landscape) {
+  :root {
+    --cell-size: 20px;
+  }
+  .tetris-layout {
+    gap: 32px;
+  }
+  .help {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --cell-size: 24px;
+  }
+  .mini-section {
+    flex-wrap: wrap;
+  }
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .buttons button {
+    flex: 1 1 45%;
+  }
+}

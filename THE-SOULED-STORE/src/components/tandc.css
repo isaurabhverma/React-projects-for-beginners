@@ -1,0 +1,25 @@
+.terms-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-heading {
+    color: #d32f2f;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  p.content:last-child {
+    margin-bottom: 0;
+  }
+  

@@ -1,0 +1,28 @@
+.logoutbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logoutbutton:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.logoutbutton:active {
+    background-color: #b71c1c; /* Even darker red when clicked */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow reduction */
+}
+
+.logoutbutton:disabled {
+    background-color: #f44336;
+    opacity: 0.6;
+    cursor: not-allowed;
+}

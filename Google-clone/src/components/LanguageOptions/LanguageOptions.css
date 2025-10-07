@@ -1,0 +1,28 @@
+.language-options {
+  margin-top: 24px;
+  margin-left: 9px;
+  font-size: 13.5px;
+  color: #bfbfbf;
+}
+.language-options a {
+  margin: 0 4px;
+  color: #9ac3ff;
+  text-decoration: none;
+}
+.language-options a:hover {
+  text-decoration: underline;
+}
+.language-disable {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .language-options {
+    font-size: 10px;
+    display: none;
+  }
+}
+@media screen and (max-width: 430px) {
+  .language-options {
+  font-size: 7px;
+  }
+}
